@@ -16,14 +16,14 @@ body{
     width: 100vw;
 }
 .logo{
-    max-height: 10vh;
     display: flex;
     justify-content: center;
     align-items:end;
+    margin-bottom: 1em;
 }
 .logo img{
     display: block;
-    max-height: 70%;
+    max-height: 10vh;
 }
 .sub-title{
     text-transform: uppercase;
@@ -147,7 +147,7 @@ hr{
         grid-template-rows: 1fr 1fr 1fr 1fr;
         min-height: 100vh;
     }
-    .logo{
+    .container .logo{
         max-width: 50%;
         margin: auto;
         margin-bottom: 0;
