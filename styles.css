@@ -15,8 +15,14 @@
 }
 .logo{
     grid-column: third / fourth;
-    grid-row: second / fourth;
-    width: 100%;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.logo img{
+    min-width: 28vmax;
+    max-height: 100%;
 }
 .input-caption{
     grid-column: sixth / seventh;
@@ -86,7 +92,7 @@
     font-family: Sora;
     font-style: normal;
     font-weight: 800;
-    font-size: 3em;
+    font-size: 4.2vmax;
     line-height: 81px;
     text-align: center;
     letter-spacing: 0.075em;
@@ -148,108 +154,3 @@ hr{
     background: #10346D;
 }
 
-@media screen and (max-width: 900px) {
-    *{
-        overflow: unset;
-    }
-    .container{
-        display: grid;
-        grid-template-columns:4fr 1fr;
-        grid-template-rows: 1fr max-content 1fr;
-        height: max-content;
-        background-image: url("img/background.png");
-        min-height: 100vh;
-        padding: 18px;
-    }
-    .logo{
-        grid-column: 1 / -1;
-        grid-row: unset; 
-        width: unset;
-    }
-    .elements{
-        display: none;
-    }
-    .input-caption{
-        grid-column: 1/-1;
-        font-family: 'Gemunu Libre',sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size:0.9em;
-        letter-spacing: 0.075em;
-        color: #FFFFFF;
-        display: flex;
-        align-items: flex-end;
-        padding-bottom: 0.4em;
-    }
-    .input-txt{
-        grid-column: 1/2;
-        grid-row: unset;
-    }
-    .input-btn{
-        grid-column: 2/-1;
-        grid-row: unset;
-    }
-    .sub-title{
-        grid-column: 1/-1;
-        grid-row: unset;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        font-family: 'Sora', sans-serif;
-        font-style: normal;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        padding-top: 0.9em;
-        min-height: 150px;
-    }
-    .coming-soon{
-        grid-column: 1/-1;
-        grid-row: 3/4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Sora;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 2em;
-        line-height: 81px;
-        text-align: center;
-        letter-spacing: 0.075em;
-        color: #144189;
-        z-index: 100;
-    }
-    .input-txt input{
-        background: #F7F7F7;
-        border: 1px solid #144189;
-        box-shadow: 0px 6px 20px -6px rgba(0, 0, 0, 0.12), 0px 12px 70px -4px rgba(0, 0, 0, 0.14);
-        border-radius: 20px;
-        width: 90%;
-        min-width: 200px;
-        font-family: 'Gemunu Libre';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 0.105em;
-        color: #636363;
-        height: 35px;
-        padding: 6px 18px;
-    }
-    .input-btn input{
-        border: 1px solid #FFFFFF;
-        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12), 0px 12px 70px rgba(0, 0, 0, 0.14);
-        border-radius: 20px;
-        height: 35px;
-        width: 70%;
-        min-width: 100px;
-        font-family: 'Gemunu Libre';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 10px;
-        letter-spacing: 0.105em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        cursor: pointer;
-    }
-}
