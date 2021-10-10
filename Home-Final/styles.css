@@ -141,11 +141,6 @@ hr{
     max-height: 350px;
     z-index: -100;
 }
-@media screen and (max-width: 1288px) {
-.container .sub-title{
-    min-height: 100px; 
-}
-}
 @media screen and (min-width: 600px) {
     .container{
         grid-template-columns: 1fr 1fr;
@@ -188,5 +183,10 @@ hr{
         width: 100%;
         max-height: unset;
         z-index: -100;
+    }
+}
+@media screen and (max-width: 1288px) {
+    .container .sub-title{
+        min-height: 100px; 
     }
 }
