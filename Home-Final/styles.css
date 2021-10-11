@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-items:end;
     margin-bottom: 1em;
+    padding-top:3em;
 }
 .logo img{
     display: block;
@@ -58,25 +59,36 @@ hr{
     letter-spacing: 0.20em;
 }
 #coming-soon{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: flex-end;
+    min-height: 100px;
+}
+#coming-soon div{
+    position: relative;
     font-family: Sora;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 800;
     color: #144189;
     letter-spacing: 0.075em;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-around;
+    width: fit-content;
+    margin: 1em auto;
+    margin-bottom: 0px;
 }
 #coming-soon h1{
-    position: absolute;
+    margin-bottom: 0px;
+    z-index: 100;
     text-align: center;
+    min-width: fit-content;
 }
-#shadow{
+#coming-soon #shadow{
+    position: absolute;
+    left: 2px;
+    top: 0;
+    z-index: -10;
     color:white;
-    padding-left: 2px;
 }
 
 .action{
