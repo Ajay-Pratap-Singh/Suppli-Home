@@ -44,8 +44,15 @@ body{
     width: max-content;
     margin: auto;
 }
+.boxed{
+    padding: 0px 10px;
+    border: 1px dashed #FFFFFF;
+    border-radius: 5px;
+}
 hr{
-    border: 1px solid #6BD3FF;
+    border: 0.8px solid #6BD3FF;
+    background-color: #6BD3FF;
+
 }
 .sub-subtitle{
     color: #F4F4F4;
@@ -160,13 +167,10 @@ hr{
         min-height: 100vh;
     }
     .container .logo{
-        max-width: 50%;
+        max-width: 60%;
         margin: auto;
         margin-bottom: 0;
         max-height: 80%;
-    }
-    .logo img{
-        height: 20%;
     }
     .sub-title{
         font-size: 1.4vw;
